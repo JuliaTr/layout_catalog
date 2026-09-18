@@ -1,3 +1,7 @@
+@use './utils/variables';
 @use './utils/visually-hidden';
 @use './blocks/page';
 @use './blocks/header';
+@use './blocks/main';
+@use './blocks/stars';
+@use './blocks/card';
