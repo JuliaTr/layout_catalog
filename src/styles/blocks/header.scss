@@ -24,70 +24,61 @@
   }
 
 
-  // .nav__list {
-  //   display: flex;
-  //   margin: 0;
-  //   padding: 0;
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
 
-  //   height: 60px;
-  //   line-height: 60px;
+    height: 60px;
+    line-height: 60px;
 
-  //   list-style: none;
-  // }
+    list-style: none;
+  }
 
-  // .nav__item {
-  //   margin-left: 20px;
-  // }
+  &__item {
+    margin-left: 20px;
 
-  // .nav__item:first-child {
-  //   margin-left: 0;
-  // }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 
-  // .nav__link {
-  //   position: relative;
-  //   display: flex;
-  //   align-items: center;
-  //   height: 60px;
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
 
-  //   font-family: Roboto, sans-serif;
-  //   font-weight: 500;
-  //   font-size: 12px;
-  //   white-space: nowrap;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
 
-  //   color: #000;
-  //   text-transform: uppercase;
-  //   text-decoration: none;
-  //   transition: color 0.3s;
-  // }
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
 
-  // a.is-active {
-  //   color: var(--blue-color);
-  // }
+    &:hover {
+      color: var(--blue-color);
+    }
 
-  // [data-qa='hover']:hover {
-  //   color: var(--blue-color);
-  // }
+    &.is-active {
+      color: var(--blue-color);
 
-  // .nav__link:hover {
-  //   color: var(--blue-color);
-  // }
+      &::after {
+        content: '';
 
-  // .nav__link.is-active {
-  //   color: var(--blue-color);
-  // }
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
 
-  // .nav__link.is-active::after {
-  //   content: '';
+        height: 4px;
 
-  //   position: absolute;
-  //   right: 0;
-  //   left: 0;
-  //   bottom: 0;
-
-  //   height: 4px;
-
-  //   background: var(--blue-color);
-  //   border-radius: 2px;
-  // }
+        background: var(--blue-color);
+        border-radius: 2px;
+      }
+    }
+  }
 }
-
