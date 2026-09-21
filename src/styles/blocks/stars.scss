@@ -1,3 +1,5 @@
+@use '../utils/variables';
+
 .stars {
   display: flex;
   padding: 0;
@@ -5,9 +7,9 @@
   list-style: none;
 
   &__star {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
+    width: variables.$star-size;
+    height: variables.$star-size;
+    margin-right: variables.$margin;
 
     background-image: url(../images/star.svg);
     background-position: center;
