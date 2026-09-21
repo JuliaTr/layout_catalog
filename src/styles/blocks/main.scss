@@ -13,22 +13,16 @@
 
   font-weight: 400;
   line-height: 18px;
-}
 
-@media (min-width: 488px) {
-  .main {
+  @media (min-width: 488px) {
     @include m.columns(2);
   }
-}
 
-@media (min-width: 768px) {
-  .main {
+  @media (min-width: 768px) {
     @include m.columns(3);
   }
-}
 
-@media (min-width: 1024px) {
-  .main {
+  @media (min-width: 1024px) {
     @include m.columns(4);
   }
 }
