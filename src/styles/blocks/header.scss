@@ -8,7 +8,6 @@
 
   box-shadow: 0 2px variables.$shadow-blur 0 variables.$header-shadow-color;
 
-
   &__logo {
     display: block;
     width: variables.$logo-size;
@@ -20,7 +19,6 @@
     width: variables.$image-size;
     height: variables.$image-size;
   }
-
 
   &__list {
     display: flex;
