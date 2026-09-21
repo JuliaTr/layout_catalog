@@ -1,26 +1,24 @@
+@use '../utils/variables';
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
 
-  --blue-color: #00acdc;
-
-  background: #fff;
-
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px variables.$shadow-blur 0 variables.$header-shadow-color;
 
 
   &__logo {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: variables.$logo-size;
+    height: variables.$logo-size;
     text-decoration: none;
   }
 
   &__logo-image {
-    width: 100%;
-    height: 100%;
+    width: variables.$image-size;
+    height: variables.$image-size;
   }
 
 
@@ -29,8 +27,8 @@
     margin: 0;
     padding: 0;
 
-    height: 60px;
-    line-height: 60px;
+    height: variables.$nav-height;
+    line-height: variables.$nav-height;
 
     list-style: none;
   }
@@ -47,24 +45,22 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 60px;
+    height: variables.$nav-height;
 
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: variables.$semibold-font-weight;
     white-space: nowrap;
 
-    color: #000;
+    color: variables.$primary-text-color;
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.3s;
 
     &:hover {
-      color: var(--blue-color);
+      color: variables.$blue-color;
     }
 
     &.is-active {
-      color: var(--blue-color);
+      color: variables.$blue-color;
 
       &::after {
         content: '';
@@ -74,9 +70,9 @@
         left: 0;
         bottom: 0;
 
-        height: 4px;
+        height: variables.$active-border-height;
 
-        background: var(--blue-color);
+        background: variables.$blue-color;
         border-radius: 2px;
       }
     }
