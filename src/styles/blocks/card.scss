@@ -1,19 +1,19 @@
-@use '../utils/variables';
+@use '../utils/variables' as v;
 
 .card {
   box-sizing: border-box;
 
-  width: 200px;
-  height: 406px;
+  width: v.$card-width;
+  height: v.$card-height;
 
   display: flex;
   flex-direction: column;
 
-  padding-left: variables.$white-space;
-  padding-right: variables.$white-space;
+  padding-left: v.$white-space;
+  padding-right: v.$white-space;
 
-  border: variables.$border-width solid #f3f3f3;
-  border-radius: variables.$border-radius;
+  border: v.$border-width solid #f3f3f3;
+  border-radius: v.$border-radius;
   background-image: url(../images/imac.jpeg);
   background-repeat: no-repeat;
   background-size: 160px 134px;
@@ -22,15 +22,15 @@
   &__heading {
     margin: 206px 0 0;
 
-    font-weight: variables.$semibold-font-weight;
-    font-size: variables.$main-text-size;
+    font-weight: v.$semibold-font-weight;
+    font-size: v.$main-text-size;
   }
 
   &__product-code {
-    margin: variables.$margin 0 0;
-    font-size: variables.$small-text-size;
-    line-height: variables.$secondary-line-height;
-    color: variables.$secondary-text-color;
+    margin: v.$margin 0 0;
+    font-size: v.$small-text-size;
+    line-height: v.$secondary-line-height;
+    color: v.$secondary-text-color;
   }
 
   &__reviews {
@@ -38,36 +38,36 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-top: variables.$white-space;
+    margin-top: v.$white-space;
   }
 
   &__reviews-number {
     margin: 0;
     text-align: right;
-    font-size: variables.$small-text-size;
-    line-height: variables.$secondary-line-height;
+    font-size: v.$small-text-size;
+    line-height: v.$secondary-line-height;
   }
 
   &__price {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: variables.$white-space;
+    margin-top: v.$white-space;
 
-    font-size: variables.$small-text-size;
+    font-size: v.$small-text-size;
   }
 
   &__price-label {
     margin: 0;
 
-    color: variables.$secondary-text-color;
+    color: v.$secondary-text-color;
   }
 
   &__price-sum {
     margin: 0;
     text-align: right;
     font-size: 16px;
-    font-weight: variables.$bold-font-weight;
+    font-weight: v.$bold-font-weight;
   }
 
   &__button {
@@ -76,26 +76,26 @@
     align-items: center;
     justify-content: center;
 
-    width: variables.$button-width;
-    height: variables.$button-height;
+    width: v.$button-width;
+    height: v.$button-height;
 
-    margin-top: variables.$white-space;
+    margin-top: v.$white-space;
 
     line-height: 16px;
     font-size: 14px;
-    font-weight: variables.$bold-font-weight;
-    color: variables.$contrast-color;
+    font-weight: v.$bold-font-weight;
+    color: v.$contrast-color;
     text-decoration: none;
     text-transform: uppercase;
 
-    background-color: variables.$blue-color;
-    border: variables.$border-width solid transparent;
-    border-radius: variables.$border-radius;
+    background-color: v.$blue-color;
+    border: v.$border-width solid transparent;
+    border-radius: v.$border-radius;
 
     &:hover {
-      color: variables.$blue-color;
-      background-color: variables.$contrast-color;
-      border-color: variables.$blue-color;
+      color: v.$blue-color;
+      background-color: v.$contrast-color;
+      border-color: v.$blue-color;
     }
   }
 }
