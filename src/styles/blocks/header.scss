@@ -1,4 +1,4 @@
-@use '../utils/variables';
+@use '../utils/variables' as v;
 
 .header {
   display: flex;
@@ -6,18 +6,18 @@
   align-items: center;
   padding: 0 50px;
 
-  box-shadow: 0 2px variables.$shadow-blur 0 variables.$header-shadow-color;
+  box-shadow: 0 2px v.$shadow-blur 0 v.$header-shadow-color;
 
   &__logo {
     display: block;
-    width: variables.$logo-size;
-    height: variables.$logo-size;
+    width: v.$logo-size;
+    height: v.$logo-size;
     text-decoration: none;
   }
 
   &__logo-image {
-    width: variables.$image-size;
-    height: variables.$image-size;
+    width: v.$image-size;
+    height: v.$image-size;
   }
 
   &__list {
@@ -25,8 +25,8 @@
     margin: 0;
     padding: 0;
 
-    height: variables.$nav-height;
-    line-height: variables.$nav-height;
+    height: v.$nav-height;
+    line-height: v.$nav-height;
 
     list-style: none;
   }
@@ -43,22 +43,22 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: variables.$nav-height;
+    height: v.$nav-height;
 
-    font-weight: variables.$semibold-font-weight;
+    font-weight: v.$semibold-font-weight;
     white-space: nowrap;
 
-    color: variables.$primary-text-color;
+    color: v.$primary-text-color;
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.3s;
 
     &:hover {
-      color: variables.$blue-color;
+      color: v.$blue-color;
     }
 
     &.is-active {
-      color: variables.$blue-color;
+      color: v.$blue-color;
 
       &::after {
         content: '';
@@ -68,9 +68,9 @@
         left: 0;
         bottom: 0;
 
-        height: variables.$active-border-height;
+        height: v.$active-border-height;
 
-        background: variables.$blue-color;
+        background: v.$blue-color;
         border-radius: 2px;
       }
     }
