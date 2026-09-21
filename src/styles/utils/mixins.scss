@@ -1,4 +1,4 @@
-@use './utils/variables' as v;
+@use './variables' as v;
 
 @mixin columns($count) {
   grid-template-columns: repeat($count, v.$card-width);
