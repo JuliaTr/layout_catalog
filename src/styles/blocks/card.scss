@@ -94,9 +94,9 @@
     border-radius: v.$border-radius;
 
     transition:
-      color 0.3s,
-      background-color 0.3s,
-      border-color 0.3;
+      color v.$change-duration,
+      background-color v.$change-duration,
+      border-color v.$change-duration;
 
     &:hover {
       color: v.$blue-color;
