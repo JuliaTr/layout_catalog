@@ -51,7 +51,7 @@
     color: v.$primary-text-color;
     text-transform: uppercase;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color v.$change-duration;
 
     &:hover {
       color: v.$blue-color;
