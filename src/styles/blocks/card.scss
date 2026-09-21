@@ -1,5 +1,4 @@
 @use '../utils/variables' as v;
-@use '../utils/mixins' as m;
 
 .card {
   box-sizing: border-box;
@@ -20,7 +19,9 @@
   background-size: 160px 134px;
   background-position: center 32px;
 
-  &__heading {
+  transition: color v.$change-duration;
+
+  &__title {
     margin: 206px 0 0;
 
     font-weight: v.$semibold-font-weight;
@@ -102,6 +103,12 @@
       color: v.$blue-color;
       background-color: v.$contrast-color;
       border-color: v.$blue-color;
+    }
+  }
+
+  &:hover {
+    .card__title {
+      color: v.$change-title-color;
     }
   }
 }
